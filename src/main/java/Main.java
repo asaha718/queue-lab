@@ -10,12 +10,14 @@ public class Main {
                 String userInput= scanner.nextLine(); 
 
                 if(userInput.equals("1")){ 
-                    Restaurant.checkIn();
+                    Restaurant.checkIn(scanner);
                 }else if(userInput.equals("2")){ 
                     Restaurant.checkOut();
                 }
 
             }
+        }catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

@@ -12,8 +12,8 @@ public class Restaurant {
 
     private static Queue<String> myQueue = new LinkedList<String>();
 
-    public static void checkIn(){ 
-        Scanner scanner = new Scanner(System.in);
+    public static void checkIn(Scanner scanner){ 
+
         System.out.println("What would you like the name of the Reservation to be under? ");
         String name = scanner.nextLine();
         
@@ -27,7 +27,6 @@ public class Restaurant {
         }
         // System.out.println("---Guest was checked in ---");
 
-        scanner.close();
     }
 
     public static void checkOut(){ 
